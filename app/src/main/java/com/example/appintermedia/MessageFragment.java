@@ -21,9 +21,6 @@ import com.example.appintermedia.databinding.FragmentMessageBinding;
 
     public class MessageFragment extends Fragment {
 
-
-
-
         private FragmentMessageBinding mBinding;
 
         public MessageFragment() {
@@ -75,7 +72,7 @@ import com.example.appintermedia.databinding.FragmentMessageBinding;
             private void sendMessage (String Message) {
                     Intent mIntent = new Intent(Intent.ACTION_SENDTO);
             mIntent.setData(Uri.parse("mailto:"));
-            mIntent.putExtra(Intent.EXTRA_EMAIL, "vedac72@gmail.com");
+            mIntent.putExtra(Intent.EXTRA_EMAIL, "ernesto.olavarria@gmail.com");
             mIntent.putExtra(Intent.EXTRA_SUBJECT, "Correo de contacto a traves de app");
             mIntent.putExtra(Intent.EXTRA_TEXT, Message);
             startActivity(mIntent);
